@@ -2,7 +2,7 @@
   "engineType": "PySpark",
   "language": "Python",
   "name": "word-count-mlops-github",
-  "label": "Word Count (with mlops) from GitHub",
+  "label": "Word Count (with mlops) from GitHub rev 1",
   "program": "main.py",
   "modelBehavior": "Auxiliary",
   "useMLOps": true,
