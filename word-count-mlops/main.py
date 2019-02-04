@@ -22,13 +22,13 @@ def count_words(sc, words_file):
     counts = words.reduceByKey(operator.add)
     sorted_counts =  counts.sortBy(lambda x: x[1], False)
     total_words = sorted_counts.count()
-    mlops.set_stat("total_words_1_push_2", total_words)
+    mlops.set_stat("total_words_1_push_7", total_words)
 
     total_words = 0
     for word,count in sorted_counts.toLocalIterator():
         print(u"{} --> {}".format(word, count))
         total_words += 1
-    mlops.set_stat("total_words_2_push_2", total_words)
+    mlops.set_stat("total_words_2_push_7", total_words)
 
 
 def main():
